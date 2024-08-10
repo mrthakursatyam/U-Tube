@@ -1,0 +1,22 @@
+.play-container{
+    margin: 1rem auto;
+    max-width: 85%;
+    display: flex;
+    align-items: start;
+    gap: 2rem;
+}
+
+@media screen and (max-width:1000px) {
+    .play-container{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .play-container{
+        margin: 1rem 0rem;
+        max-width: 100%;
+        justify-content: center;
+        gap: 0rem;
+    }
+}

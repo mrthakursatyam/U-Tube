@@ -1,0 +1,81 @@
+.search-videos-list{
+    width: 30rem;
+    height: 100%;
+    margin-left: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.search-videos-list .card{
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: row;
+    padding-bottom: 1rem;
+    cursor: pointer;
+}
+
+.search-videos-list .card img{
+    width: 11.5rem;
+    height: 6.5rem;
+    border-radius: 1rem;
+}
+
+.search-videos-list .card .lower-card{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    justify-content: space-evenly;
+}
+
+.search-videos-list .card h2{
+    font-size: 0.9rem;
+    font-weight: 550;
+    color: black;
+    overflow: hidden;
+}
+
+.search-videos-list .card h3{
+    font-size: 0.74rem;
+    color: rgba(97, 97, 97, 0.963);
+    font-weight: 550;
+}
+
+.search-videos-list .card p{
+    font: 400 1rem;
+    color: rgb(65, 65, 65);
+    font-size: 0.74rem;
+}
+
+.dot{
+    font-size: 0.3rem;
+    color: gray;
+    padding: 0rem 0.3rem 0.2rem 0.4rem;
+}
+
+@media screen and (max-width:1200px){
+    .search-videos-list .card h2{
+        height: 2.5rem;
+    }
+}
+
+@media screen and (max-width:768px){
+    .search-videos-list{
+        width: 100%;
+        margin-left: 0rem;
+        padding: 0rem 1rem;
+    }
+
+    .card{
+        width: 100%;
+    }
+
+    .lower-card{
+        width: 100%;
+    }
+
+    .search-videos-list .card h2{
+        height: 2.6rem;
+        width: 100%;
+    }
+}

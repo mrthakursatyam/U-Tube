@@ -1,0 +1,302 @@
+.feed{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem 1rem;
+    padding: 1rem;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-bottom: 1rem;
+    cursor: pointer;
+    /* background-color: tomato; */
+}
+
+.card img{
+    width: 26rem;
+    height: 15rem;
+    border-radius: 1rem;
+}
+
+.wideFeed{
+    grid-template-columns: repeat(4,1fr);
+    gap: 1.5rem 0.3rem;
+}
+
+.wideFeed .card img{
+    width: 20.5rem;
+    height: 12rem;
+}
+
+.card .lower-card{
+    display: flex;
+    gap: 0.5rem;
+    padding: 0rem 0.1rem;
+}
+
+.card .left-card img{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 1rem;
+}
+
+.card .right-card{
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    padding-right: 0.1rem;
+}
+
+.card h2{
+    width: 94%;
+    height: 2.7rem;
+    overflow-y: hidden;
+    font-size: 1rem;
+    font-weight: 500;
+    color: black;
+}
+
+.card h3{
+    font-size: 0.95rem;
+    color: rgb(104, 104, 104);
+    font-weight: 400;
+}
+
+.card p{
+    font-weight: 400;
+    font-size: 0.9rem;
+    color: rgb(73, 73, 73);
+}
+
+.dot{
+    font-size: 0.3rem;
+    color: gray;
+    padding: 0rem 0.3rem 0.2rem 0.4rem;
+}
+
+@media screen and (max-width:1300px) { 
+    .card{
+        width: 21.1rem;
+    }
+    
+    .card img{
+        width: 21.1rem;
+        height: 10rem;
+        border-radius: 0.5rem;
+    }
+
+    .card .left-card img{
+        width: 1.6rem;
+        height: 1.6rem;
+    }
+
+    .card h2{
+        font-size: 0.8rem;
+    }
+    
+    .card h3{
+        font-size: 0.75rem;
+    }
+    
+    .card p{
+        font-size: 0.7rem;
+    }
+
+    .wideFeed{
+        gap: 1.5rem 0.9rem;
+    }
+
+    .wideFeed .card{
+        width: 16.5rem;
+    }
+
+    .wideFeed .card img{
+        width: 16.5rem;
+        height: 12rem;
+    }
+
+    .wideFeed .card .left-card img{
+        width: 1.4rem;
+        height: 1.4rem;
+    }
+
+    .wideFeed .card h2{
+        height: 2rem;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .feed{
+        gap: 1.5rem 0.5rem;
+        padding: 1rem;
+    }
+    
+    .card{
+        width: 18rem;
+    }
+    
+    .card img{
+        width: 18rem;
+        height: 10rem;
+        border-radius: 0.5rem;
+    }
+
+    .card h2{
+        height: 2rem;
+        font-size: 0.8rem;
+    }
+    
+    .wideFeed{
+        grid-template-columns: repeat(3,1fr);
+        gap: 1.5rem 0.9rem;
+    }
+
+    .wideFeed .card{
+        width: 19rem;
+    }
+
+    .wideFeed .card img{
+        width: 19rem;
+        height: 10rem;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .feed{
+        gap: 1.5rem 0.5rem;
+    }
+
+    .card{
+        width: 16rem;
+    }
+    
+    .card img{
+        width: 16rem;
+        height: 8rem;
+    }
+
+    .wideFeed{
+        grid-template-columns: repeat(3,1fr);
+        gap: 1.5rem 0.9rem;
+    }
+
+    .wideFeed .card{
+        width: 14rem;
+    }
+
+    .wideFeed .card img{
+        width: 14rem;
+        height: 8rem;
+    }
+
+    .wideFeed .card .left-card img{
+        width: 1.4rem;
+        height: 1.4rem;
+    }
+
+    .wideFeed .card h2{
+        height: 2rem;
+    }
+}
+
+@media screen and (max-width:850px) {
+    .feed{
+        gap: 1.5rem 0.5rem;
+    }
+
+    .card{
+        width: 14rem;
+    }
+    
+    .card img{
+        width: 14rem;
+        height: 8rem;
+    }
+
+    .wideFeed{
+        grid-template-columns: repeat(3,1fr);
+        gap: 1.5rem 0.9rem;
+    }
+
+    .wideFeed .card{
+        width: 13rem;
+    }
+
+    .wideFeed .card img{
+        width: 13rem;
+        height: 8rem;
+    }
+}
+
+
+@media screen and (max-width:450px) {
+
+    .wideFeed{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .wideFeed .card{
+        width: 25rem;
+    }
+
+    .wideFeed .card img{
+        width: 25rem;
+        height: 14rem;
+    }
+}
+
+@media screen and (max-width:415px) {
+    .wideFeed .card{
+        width: 22.5rem;
+    }
+
+    .wideFeed .card img{
+        width: 22.5rem;
+        height: 12rem;
+    }
+}
+
+@media screen and (max-width:390px) {
+    .wideFeed .card{
+        width: 10rem;
+    }
+
+    .wideFeed .card img{
+        width: 10rem;
+    }
+}
+
+@media screen and (max-width:376px) {
+    .wideFeed .card{
+        width: 21.6rem;
+    }
+
+    .wideFeed .card img{
+        width: 21.6rem;
+        height: 12rem;
+    }
+}
+
+@media screen and (max-width:361px) {
+    .wideFeed .card{
+        width: 20.4rem;
+    }
+
+    .wideFeed .card img{
+        width: 20.4rem;
+        height: 12rem;
+    }
+}
+
+@media screen and (max-width:321px) {
+    .wideFeed .card{
+        width: 18rem;
+    }
+
+    .wideFeed .card img{
+        width: 18rem;
+        height: 10rem;
+    }
+}

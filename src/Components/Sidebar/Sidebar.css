@@ -1,0 +1,154 @@
+.sidebar{
+    position:fixed;
+    left: 0;
+    height: 100%;
+    padding: 0.5rem 1rem 0.5rem 0.5rem;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    padding-bottom: 5rem;
+}
+
+.shortcut-links{
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.side-link{
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding: 0.5rem 0.5rem;
+    cursor: pointer;
+}
+
+.side-link:hover{
+    background-color: rgba(237, 237, 237, 0.694);
+}
+
+.shortcut-links .side-link p{
+    font-size: 0.9rem;
+}
+
+hr{
+    width: 10rem;
+    border: 0.1px solid rgba(216, 216, 216, 0.619);
+    border-radius: 1rem;
+}
+
+img{
+    width: 1.5rem;
+}
+
+.subscribed-list{
+    padding-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.subscription-heading{
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.subscribed-list .side-link{
+    align-items: center;
+}
+
+.subscribed-list img {
+    width: 2.1rem;
+    border-radius: 2rem;
+}
+
+.subscribed-list .side-link p{
+    font-size: 0.95rem;
+}
+
+.small-sidebar{
+    position:fixed;
+    left: 0;
+    height: 100vh;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    padding: 0rem;
+    padding-bottom: 5rem;
+}
+
+.small-sidebar .shortcut-links{
+    width: 6rem;
+    padding: 0.3rem;
+}
+
+.small-sidebar .shortcut-links .side-link{
+    gap: 0.5rem;
+    flex-direction: column;
+    padding: 1rem 0rem;
+    align-items: center;
+}
+
+.small-sidebar .shortcut-links .side-link img{
+    width: 1.35rem;
+}
+
+.small-sidebar .shortcut-links .side-link p{
+    font-size: 0.63rem;
+}
+
+.small-sidebar .subscribed-list .side-link{
+    display: none;
+}
+
+.small-sidebar .subscribed-list {
+    padding-left: 0.3rem;
+}
+
+.small-sidebar .subscribed-list .subscription-heading{
+    cursor: pointer;
+    font-size: 0.6rem;
+    background-color: rgba(250, 8, 8, 0.751);
+    border-radius: 1rem;
+    color: white;
+    padding: 0.3rem;
+}
+
+.active {
+    background-color: rgba(237, 237, 237, 0.694);
+    border-radius: 0.5rem;
+}
+
+.hideSidebar{
+     display: none;
+}
+
+.showSidebar{
+    position:fixed;
+    left: 0;
+    top: 2.3rem;
+    height: 100%;
+    background-color: white;
+    padding: 1rem;
+    z-index: 600;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    padding-bottom: 5rem;
+}
+
+@media screen and (max-width:1000px) {
+    .sidebar{
+        display: none;
+    }
+}

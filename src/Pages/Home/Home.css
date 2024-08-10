@@ -1,0 +1,39 @@
+.feed-container{
+    padding-left: 12rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 0.5rem;
+}
+
+.large-container{
+    display: flex;
+    width: 100%;
+    padding-left: 7rem;
+}
+
+@media screen and (max-width:1000px) {
+    .feed-container{
+        padding:0;
+        width: 90%;
+        margin: 1rem auto;
+    }  
+    
+    .large-container{
+        padding: 0;
+        width: 80%;
+        margin: 1rem auto;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .feed-container{
+        padding: 0;
+        width: max-content;
+        margin: 0.5rem 0rem;
+    }  
+    
+    .large-container{
+        padding: 0;
+        width: max-content;
+    }
+}
